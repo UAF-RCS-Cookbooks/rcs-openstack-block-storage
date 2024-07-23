@@ -3,7 +3,7 @@ maintainer       'UAF RCS'
 maintainer_email 'chef@rcs.alaska.edu'
 license          'Apache-2.0'
 description      'The OpenStack Advanced Volume Management service Cinder.'
-version          '20.0.0'
+version          '20.0.1'
 
 %w(ubuntu redhat centos).each do |os|
   supports os

@@ -27,7 +27,7 @@ class ::Chef::Recipe
   include ::Openstack
 end
 
-include_recipe 'openstack-block-storage::cinder-common'
+include_recipe 'rcs-openstack-block-storage::cinder-common'
 
 platform_options = node['openstack']['block-storage']['platform']
 

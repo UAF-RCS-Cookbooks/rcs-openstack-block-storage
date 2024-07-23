@@ -106,7 +106,7 @@ shared_examples 'common-logging' do
     end
 
     it 'runs logging recipe if node attributes say to' do
-      expect(chef_run).to include_recipe 'openstack-common::logging'
+      expect(chef_run).to include_recipe 'rcs-openstack-common::logging'
     end
   end
 
@@ -117,14 +117,14 @@ shared_examples 'common-logging' do
     end
 
     it 'runs logging recipe if node attributes say to' do
-      expect(chef_run).to_not include_recipe 'openstack-common::logging'
+      expect(chef_run).to_not include_recipe 'rcs-openstack-common::logging'
     end
   end
 end
 
 def expect_runs_openstack_common_logging_recipe
   it 'runs logging recipe if node attributes say to' do
-    expect(chef_run).to include_recipe 'openstack-common::logging'
+    expect(chef_run).to include_recipe 'rcs-openstack-common::logging'
   end
 end
 

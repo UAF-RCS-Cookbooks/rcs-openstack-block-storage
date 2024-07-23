@@ -26,7 +26,7 @@ class ::Chef::Recipe
   include Apache2::Cookbook::Helpers
 end
 
-include_recipe 'openstack-block-storage::cinder-common'
+include_recipe 'rcs-openstack-block-storage::cinder-common'
 
 bind_service = node['openstack']['bind_service']['all']['block-storage']
 platform_options = node['openstack']['block-storage']['platform']

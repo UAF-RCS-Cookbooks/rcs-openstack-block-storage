@@ -21,7 +21,7 @@ class ::Chef::Recipe
 end
 
 if node['openstack']['block-storage']['syslog']['use']
-  include_recipe 'openstack-common::logging'
+  include_recipe 'rcs-openstack-common::logging'
 end
 
 platform_options = node['openstack']['block-storage']['platform']
