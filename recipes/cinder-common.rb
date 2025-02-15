@@ -105,7 +105,7 @@ end
 
 template '/etc/cinder/cinder.conf' do
   source 'openstack-service.conf.erb'
-  cookbook 'openstack-common'
+  cookbook 'rcs-openstack-common'
   group node['openstack']['block-storage']['group']
   owner node['openstack']['block-storage']['user']
   mode '640'
@@ -134,7 +134,7 @@ end
 if node['openstack']['block-storage']['use_rootwrap']
   template '/etc/cinder/rootwrap.conf' do
     source 'openstack-service.conf.erb'
-    cookbook 'openstack-common'
+    cookbook 'rcs-openstack-common'
     owner 'root'
     group 'root'
     mode '644'
